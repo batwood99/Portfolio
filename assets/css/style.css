@@ -83,16 +83,6 @@ main {
     justify-content: space-around;
     color: #d8d8d8;
   }
-  
-  footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-    margin-top: auto;
-  }
 
   .aboutme {
     display: flex;
@@ -121,6 +111,7 @@ main {
   .card {
     border-style: solid;
     border-width: 1px;
+    border-color: #242424;
     flex: 1;
     margin: 5px 0
   }
@@ -144,12 +135,40 @@ main {
   .card img {
     width: 100%;
   }
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  footer a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin: 8px;
+  }
   
   @media screen and (max-width: 768px) {
     main {
       display: flex;
       flex-direction: column;
     }
+    nav ul{
+      display: flex;
+      flex-direction: column;
+    }
+    footer ul{
+      display: flex;
+      flex-direction: column;
+    }
+    aside{
+      border-right: none;
+      border-bottom: 3px solid #b3b3b3;
+    }
+  
     .projects :nth-child(n+1) {
       flex-basis: 100%;
     }
