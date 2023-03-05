@@ -93,6 +93,18 @@ main {
     color: #fff;
     margin-top: auto;
   }
+
+  .aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #242424;
+    justify-content: space-between;
+    color: #b3b3b3;
+  }
+
+  .projects p {
+    margin: 20px;
+      }
   
   .projects {
     display: flex;
@@ -103,7 +115,7 @@ main {
   }
   
   .projects p {
-margin: 20px;
+    margin: 20px;
   }
   
   .card {
@@ -126,7 +138,7 @@ margin: 20px;
   }
   
   .card p {
-    text-align: left;
+    text-align: center;
   }
   
   .card img {
@@ -141,6 +153,5 @@ margin: 20px;
     .projects :nth-child(n+1) {
       flex-basis: 100%;
     }
-  }
-  
-  
+    .aboutme :nth-child(n+1) {
+      flex-basis: 100%;}}
